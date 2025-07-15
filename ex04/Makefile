@@ -1,9 +1,9 @@
 CC = c++
 FLAGS = -Wall -Werror -Wextra
-NAME = program
 SRC = main.cpp
 OBJ = $(SRC:.cpp=.o)
 RM = rm -f
+NAME = replacer
 
 all: $(NAME)
 
@@ -13,10 +13,8 @@ $(NAME): $(OBJ)
 clean: $(RM) $(OBJ)
 
 fclean: clean
-		$(RM) $(NAME)
+		$(RM) $(NAME);
 
 re: fclean all
 
 .PHONY: all clean fclean re
-
-
