@@ -8,10 +8,13 @@ NAME = Zombie
 all: $(NAME)
 
 $(NAME): $(OBJ)
-	$(CC) $(FLAGS) $(SRC) -o $(NAME)
+	$(CC) $(FLAGS) $(OBJ) -o $(NAME)
 
 clean:
 	$(RM) $(OBJ)
+
+fclean: clean
+	$(RM) $(NAME)
 
 re: fclean all
 
