@@ -1,7 +1,7 @@
 CC = c++
 FLAGS = -Wall -Wextra -Werror
 SRC = main.cpp
-OBJ = $(SRC:.cpp = .o)
+OBJ = $(SRC:.cpp=.o)
 NAME = brain
 RM	= rm -f
 

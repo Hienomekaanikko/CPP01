@@ -1,7 +1,7 @@
 CC = c++
 FLAGS = -Wall -Werror -Wextra
 SRC = main.cpp Zombie.cpp zombieHorde.cpp
-OBJ = $(SRC:.cpp = .o)
+OBJ = $(SRC:.cpp=.o)
 NAME = Zombie
 RM = rm -f
 

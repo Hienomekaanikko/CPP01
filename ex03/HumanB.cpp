@@ -12,17 +12,13 @@
 
 #include "HumanB.hpp"
 
-HumanB::HumanB(const std::string& humanName) : name(humanName), weapon(nullptr)
-{
-}
+HumanB::HumanB(const std::string& humanName) : name(humanName), weapon(nullptr) {}
 
-void HumanB::setWeapon(Weapon& weapon)
-{
+void HumanB::setWeapon(Weapon& weapon){
 	this->weapon = &weapon;
 }
 
-void HumanB::attack(void)
-{
+void HumanB::attack(void){
 	if (weapon)
 		std::cout << name << " attacks with their " << weapon->getType() << std::endl;
 	else

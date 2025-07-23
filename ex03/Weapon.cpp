@@ -13,19 +13,16 @@
 #include "Weapon.hpp"
 
 // Constructor
-Weapon::Weapon(const std::string& initialType)
-{
+Weapon::Weapon(const std::string& initialType){
 	this->type = initialType;
 }
 
 // Getter
-const std::string& Weapon::getType() const
-{
+const std::string& Weapon::getType() const{
 	return (this->type);
 }
 
 // Setter
-void Weapon::setType(const std::string& newType)
-{
+void Weapon::setType(const std::string& newType){
 	this->type = newType;
 }
