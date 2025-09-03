@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: msuokas <msuokas@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/10 14:06:34 by msuokas           #+#    #+#             */
-/*   Updated: 2025/07/10 14:44:34 by msuokas          ###   ########.fr       */
+/*   Created: 2025/08/28 12:47:17 by msuokas           #+#    #+#             */
+/*   Updated: 2025/08/29 14:11:34 by msuokas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,19 +15,17 @@
 
 #include <iostream>
 
-class Zombie
-{
+class Zombie {
+	private:
+		std::string _name;
 	public:
-		//constructor
 		Zombie();
-		//deconstructor
+		Zombie(const std::string& name);
 		~Zombie();
 		void announce(void);
-		void setName(std::string name);
-	private:
-		std::string	name;
+		void setName(const std::string& name);
 };
 
-Zombie*	zombieHorde( int N, std::string name );
+Zombie* zombieHorde( int N, std::string name );
 
 #endif

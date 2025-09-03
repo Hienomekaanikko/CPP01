@@ -6,11 +6,13 @@
 /*   By: msuokas <msuokas@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/10 15:17:36 by msuokas           #+#    #+#             */
-/*   Updated: 2025/07/10 16:44:16 by msuokas          ###   ########.fr       */
+/*   Updated: 2025/08/29 14:24:40 by msuokas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "HumanB.hpp"
+
+HumanB::~HumanB(){}
 
 HumanB::HumanB(const std::string& humanName) : name(humanName), weapon(nullptr) {}
 

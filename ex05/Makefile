@@ -3,7 +3,7 @@ FLAGS = -Wall -Werror -Wextra
 SRC = main.cpp Harl.cpp
 OBJ = $(SRC:.cpp=.o)
 RM = rm -f
-NAME = Harl
+NAME = harl
 
 all: $(NAME)
 

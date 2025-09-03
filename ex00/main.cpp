@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: msuokas <msuokas@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/10 12:16:19 by msuokas           #+#    #+#             */
-/*   Updated: 2025/07/10 13:52:49 by msuokas          ###   ########.fr       */
+/*   Created: 2025/08/28 12:27:35 by msuokas           #+#    #+#             */
+/*   Updated: 2025/08/29 14:40:12 by msuokas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,23 @@
 
 int	main(void)
 {
-	Zombie	*dude = newZombie("George");
-	dude->announce();
-	delete (dude);
+	std::cout << "Testing normal zombie with name: \n\n";
+	Zombie Z1 = Zombie("NormalZombie");
+	Z1.announce();
 
-	randomChump("Yrjo");
-	return (0);
+	std::cout << "------------------------------------\n\n";
+	std::cout << "Testing normal zombie without name: \n\n";
+	Zombie Z2 = Zombie();
+	Z2.announce();
+
+	std::cout << "------------------------------------\n\n";
+	std::cout << "Testing allocated zombie: \n\n";
+	Zombie* Z3 = newZombie("AllocZombie");
+	Z3->announce();
+	delete Z3;
+
+	std::cout << "------------------------------------\n\n";
+	std::cout << "Testing randomChump: \n\n";
+	randomChump("randomChump");
+	std::cout << std::endl;
 }
