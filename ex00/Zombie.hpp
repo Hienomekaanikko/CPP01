@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: msuokas <msuokas@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/10 13:13:31 by msuokas           #+#    #+#             */
-/*   Updated: 2025/07/10 13:55:52 by msuokas          ###   ########.fr       */
+/*   Created: 2025/08/28 12:11:40 by msuokas           #+#    #+#             */
+/*   Updated: 2025/08/29 14:45:30 by msuokas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,17 +15,17 @@
 
 #include <iostream>
 
-class Zombie
-{
+class Zombie {
 	private:
-		std::string	name;
+		const std::string _name;
 	public:
-		Zombie(std::string name);
-		void announce( void );
+		Zombie();
 		~Zombie();
+		Zombie(const std::string& name);
+		void announce(void);
 };
 
-Zombie* newZombie( std::string name );
-void	randomChump( std::string name );
+Zombie* newZombie(std::string name);
+void randomChump( std::string name );
 
 #endif

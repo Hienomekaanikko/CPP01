@@ -1,9 +1,9 @@
 CC = c++
 FLAGS = -Wall -Werror -Wextra
-SRC = main.cpp newZombie.cpp randomChump.cpp Zombie.cpp
+SRC = main.cpp Zombie.cpp newZombie.cpp randomChump.cpp
 OBJ = $(SRC:.cpp=.o)
 RM = rm -f
-NAME = Zombie
+NAME = zombie
 
 all: $(NAME)
 
